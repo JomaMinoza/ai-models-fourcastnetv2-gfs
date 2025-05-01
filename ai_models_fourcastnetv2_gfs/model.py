@@ -121,7 +121,7 @@ class FourCastNetv2(Model):
 
         self.n_lat = 721
         self.n_lon = 1440
-        self.hour_steps = 6
+        self.hour_steps = 24
 
         self.backbone_channels = len(self.ordering)
 
