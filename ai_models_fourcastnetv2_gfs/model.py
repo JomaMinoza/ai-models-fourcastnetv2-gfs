@@ -24,7 +24,10 @@ class FourCastNetv2(Model):
     download_files = ["weights.tar", "global_means.npy", "global_stds.npy"]
 
     # Input
-    area = [90, 0, -90, 360 - 0.25]
+    #area = [90, 0, -90, 360 - 0.25]
+    # Extended Philippines area with typhoon genesis region in the Pacific
+    area = [21.0, 116.0, 4.5, 150.0]  # [North, West, South, East]
+
     grid = [0.25, 0.25]
 
     param_sfc = ["10u", "10v", "2t", "sp", "msl", "tcwv", "100u", "100v"]
